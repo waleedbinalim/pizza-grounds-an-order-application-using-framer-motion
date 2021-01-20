@@ -1,0 +1,7 @@
+This project is my testing of creating an SPA using React, 
+React Router, React Hooks and adding animations using the 
+Framer Motion Library which was created for react.
+
+This project is heavily inspired by Shaun Pelling (known
+as TheNetNinja on youtube) and his tutorial series on 
+Framer Motion.

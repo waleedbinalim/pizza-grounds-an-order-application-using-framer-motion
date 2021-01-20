@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Kufam', cursive;
+  color: #4d4d4dff;
+}
+
+h1{
+  font-size: 4em;
+}
+
+p{
+  font-size: 2em;
+  text-align: center;
+}
+
+.page-background{
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("./img/background.svg"); */
+  background-color: #e6e6e6ff;
+}
+
+header{
+  padding-top: 15px;
+  width: 100%;
+  /* height: 115px; */
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-logo{
+  background: url('./img/logo.svg') no-repeat center;
+  background-size: cover;
+  padding: 10px 5px;
+  min-width: 150px;
+  height: 150px;
+}
+
+.bottom-line{
+  background: #ccccccff;
+  margin-top: 8px;
+  height: 8px;
+  width: 80%;
+  border-radius: 8px ;
+}
+
+button{
+  color: grey;
+  font-weight: bold;
+  padding: 10px 30px;
+  font-size: 2em;
+  background: transparent;
+  border-radius: 50px;
+  border: 3px solid gray;
+  margin: 40px auto 0;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.container{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container{
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0px 250px;
+}
+
+.card{
+  background: white;
+  height: 250px;
+  width: 200px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 16px -6px black;
+}
+
+/* SIZE SECTION */
+.Small{
+  min-width: 180px;
+  min-height: 180px;
+  margin-top: 30px;
+  background: url('./img/size/small.svg') no-repeat center;
+  background-size: cover ;
+}
+.Medium{
+  min-width: 180px;
+  min-height: 180px;
+  margin-top: 30px;
+  background: url('./img/size/medium.svg') no-repeat center;
+  background-size: cover ;
+}
+.Large{
+  min-width: 180px;
+  min-height: 180px;
+  margin-top: 30px;
+  background: url('./img/size/large.svg') no-repeat center;
+  background-size: cover ;
+}
+
+/* BASE SECTION */
+
+.flatbread{
+  background: url(./img/base/flatbread.jpg) center no-repeat;
+  background-size: cover ;
+  width: 180px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.thin-and-crispy{
+  background: url(./img/base/thinandcrispy.jpg) center no-repeat;
+  background-size: cover ;
+  width: 180px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.stuffed-crust{
+  background: url(./img/base/stuffedcrust.jpg) center no-repeat;
+  background-size: cover ;
+  width: 180px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+
+/* TOPPINGS SECTION */
+
+.toppings-container{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upper-three, .lower-three{
+  padding: 15px;
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+
+.topping-circle{
+  height: 80px;
+  width: 80px;
+  background: springgreen;
+  border-radius: 50%;
+}
+
+.circle-bottom{
+  margin-top: 80px;
+  background: url('./img/tomato.svg') center no-repeat;
+  background-size: cover;
+}
+
+.circle-topleft, .circle-topright{
+  margin-top: 80px;
+}
+
+.circle-topleft{
+  background: url('./img/capsicum.svg') center no-repeat;
+  background-size: cover;
+}
+
+.circle-top{
+  background: url('./img/pineapple.svg') center no-repeat;
+  background-size: cover;
+}
+
+.circle-topright{
+  background: url('./img/mushroom.svg') center no-repeat;
+  background-size: cover;
+}
+
+.circle-left{
+  background: url('./img/olives.svg') center no-repeat;
+  background-size: cover;
+}
+
+.circle-right{
+  background: url('./img/cheeze.svg') center no-repeat;
+  background-size: cover;
+}
+
+.active{
+  background: #6affb4e1;
+}
+
+.check{
+  display: inline-block;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.2em;
+  height: 25px;
+  width: 25px;
+  background: #008000ff;
+  color: white;
+  border-radius: 50%;
+  /* display: none; */
+}
+
+.uncheck{
+  display: none;
+}
+
+.final-toppings{
+  padding: 5px  5px;
+}

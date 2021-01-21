@@ -2,6 +2,24 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+const containerVariant = {
+    hidden: {
+        scale: 0
+    },
+    visible: {
+        scale: 1,
+        transition: {
+            duration: 0.5,
+            type: 'spring',
+            stiffness: 50
+        }
+    },
+    exit: {
+        x: '-100vw',
+        transition: {ease: 'easeInOut'}
+    }
+}
+
 
 const circleVariant = {
     hover: {
@@ -9,6 +27,17 @@ const circleVariant = {
         rotateZ: 360,
         transition: {delay: 0.25 ,duration: 0.5}
     }
+}
+
+const buttonVariant = {
+    hover: {
+        scale: [1,1.2], 
+
+        transition: {
+            duration:0.8,
+            yoyo: Infinity
+        },
+    },
 }
 
 
@@ -24,7 +53,9 @@ const Toppings = ({addTopping, pizza}) => {
     }
 
     return(
-        <div className='base container'>
+        <motion.div className='base container'
+        variants={containerVariant} initial="hidden" animate="visible" exit="exit"
+        >
             <h1>Toppings</h1>
             <div className="toppings-container">
                 <div className="upper-three">
@@ -51,9 +82,11 @@ const Toppings = ({addTopping, pizza}) => {
                 </div>
             </div>
             <Link to="/order">
-             <button>Next</button>
+                <motion.button variants={buttonVariant} whileHover="hover">
+                  Next
+                </motion.button>
             </Link>
-        </div>
+        </motion.div>
     )
 
 }

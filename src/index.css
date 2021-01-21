@@ -7,6 +7,7 @@
 body{
   font-family: 'Kufam', cursive;
   color: #4d4d4dff;
+  overflow: hidden;
 }
 
 h1{
@@ -42,6 +43,7 @@ header{
   padding: 10px 5px;
   min-width: 150px;
   height: 150px;
+  z-index: 3;
 }
 
 .bottom-line{

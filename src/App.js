@@ -1,15 +1,16 @@
 import React, {useState} from 'react'
 import Header from './components/Header';
-// import { Route, Switch, useLocation } from "react-router-dom";
-import { Route, Switch} from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import Home from './components/Home';
 import Size from './components/Size';
 import Base from './components/Base';
 import Toppings from './components/Toppings';
 import Order from './components/Order';
-
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
+
+  const location = useLocation();
 
   const [pizza, setPizza] = useState({ size: "" , base: "", toppings: [] });
 
@@ -36,7 +37,8 @@ function App() {
     <div className="App">
       <div className="page-background">
         <Header />
-        <Switch>
+        <AnimatePresence exitBeforeEnter>
+        <Switch  key={location.key}>
           <Route exact path='/'>
             <Home />
           </Route>
@@ -53,6 +55,7 @@ function App() {
             <Order pizza={pizza} />
           </Route>
         </Switch>
+        </AnimatePresence>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
 # Updates Added
- Various animations on each component
- Exit Animations
+ Various animations on each component.
+ 
+ Exit Animations.
